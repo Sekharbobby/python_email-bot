@@ -65,5 +65,4 @@ def get_email_info():
     if 'yes' in send_more:
         get_email_info()
 
-
 get_email_info()
