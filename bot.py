@@ -10,8 +10,6 @@ def talk(text):
     engine.say(text)
     engine.runAndWait()
 
-
-
 def get_info():
     try:
         with sr.Microphone() as source:
@@ -35,10 +33,9 @@ def send_email(receiver, subject, message):
     server.send_message(email)
 
 # If u want to send just email to destination without accesing email list , remove # tag  
-  #server.sendmail('fresh.grandma@gmail.com',
-                #'jhankar.madhu2@gmail.com',
+  #server.sendmail('abc@gmail.com',
+                #'efgh@gmail.com',
                 #'Hi Dude make sure you join the party on cristmas otherwise i will move out from the house')
-
 
 email_list = {
     'balayya': 'balayya@gmail.com',
@@ -47,7 +44,6 @@ email_list = {
     'lisa': 'lisa@blackpink.com',
     'irene': 'irene@redvelvet.com'
 }
-
 
 def get_email_info():
     talk('To Whom you want to send email')
